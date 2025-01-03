@@ -1,0 +1,119 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up full viewport height */
+}
+
+.app-main {
+  padding: 21px;
+}
+
+/* Tablet Layout (adjust breakpoint as needed) */
+@media (max-width: 768px) { 
+  .task-manager-container {
+    /* Adjust layout for tablets */
+  }
+}
+
+/* Mobile Layout (adjust breakpoint as needed) */
+@media (max-width: 480px) {
+  .task-manager-container {
+    /* Adjust layout for mobile */
+  }
+
+  .header {
+    flex-direction: column; /* Stack header elements vertically */
+  }
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 0rem 0;
+  text-align: center;
+  height: 46px;
+  font-size: 13px;
+}
+.app-main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-manager-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 840px; /* Adjust as needed */
+}
+
+/* Add more styles for TaskForm, TaskList, Auth components */
+/* App.css or a separate CSS file */
+
+.menu-button {
+  /* Style your menu button */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem; /* Add some spacing */
+}
+
+/* App.css or a separate sidebar.css file */
+.sidebar-nav {
+  background-color: #282c34;
+  width: 250px;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  height: 30%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px);
+  color: white;
+}
+
+.sidebar-nav.open {
+  transform: translateX(0); /* Slide in when open */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; /* Add top/bottom margin */
+}
+
+.sidebar-nav li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee; /* Subtle separator */
+  cursor: pointer;
+}
+
+.sidebar-nav li:hover,
+.sidebar-nav li.active {
+  background-color: #1877f2; /* Lighten background on hover/active */
+}
+
+.sidebar-nav a { /* If you use <a> tags for menu items */
+  text-decoration: none;
+  color: #333; /* Dark gray text */
+}
+
+.content-container {
+  display: flex;
+}

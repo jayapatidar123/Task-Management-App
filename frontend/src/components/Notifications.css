@@ -1,0 +1,80 @@
+/* Notifications.css */
+
+.notifications-container {
+  position: relative; 
+  display: inline-block; 
+  float: left;
+}
+
+.notifications-container > .MuiBadge-root {
+  cursor: pointer;
+}
+
+.notifications-panel {
+  position: fixed;
+  top: 15%;
+  left: 32.7%;
+  background-color: #282c34;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 10;
+  min-width: 512px;
+  max-width: 400px;
+  padding: 10px;
+  color: white;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.notification-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  cursor: default;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) { 
+  .notifications-panel {
+    right: auto; /* Reset right positioning */
+    left: 50%;
+    transform: translateX(-50%); /* Center the panel */
+    width: 90%; /* Take up most of the screen width */
+    max-width: 300px; /* Limit the maximum width */
+  }
+}
+.notifications-icon {
+  /* Ensure the icon is visible on smaller screens */
+  font-size: large !important; 
+
+  /* You might want to add some padding for better touch target */
+  padding: 8px;
+
+  /* Make it clickable on both touch and mouse events */
+  cursor: pointer;
+}
+
+/* Media query for smaller screens (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .notifications-icon {
+    font-size: x-large !important; /* Make it even bigger on very small screens */
+  }
+}

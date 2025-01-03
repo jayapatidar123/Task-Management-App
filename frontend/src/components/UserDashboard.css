@@ -1,0 +1,35 @@
+.user-dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizental */
+    gap: 20px; /* Space between summary and graphs */
+  }
+  
+  .task-summary {
+    display: flex;
+    gap: 20px; /* Space between summary cards */
+    flex-wrap: wrap; /* Allow cards to wrap */
+  }
+  
+  .summary-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 0 200px; /* Each card takes at least 200px, can grow and shrink */
+  }
+  
+  .graphs {
+    display: flex;
+    flex-direction: column; /* Arrange graphs vertically */
+    gap: 20px; /* Space between graphs */
+  }
+  
+  .graph-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,70 @@
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Align items to left and right */
+  align-items: center; /* Vertically center align items */
+  width: 100%; /* Make the container take full width */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Header Actions Container */
+.header-actions {
+  display: flex;
+  align-items: center; 
+}
+
+/* Notification Icon (Assuming you're using a font icon) */
+.notification-icon {
+  font-size: 1.2rem; 
+  margin-right: 1.5rem; 
+  cursor: pointer; 
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+  /* Optional: Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.welcome-message {
+  margin: 9px;
+  /* position: relative; */
+  /* float: right; */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
